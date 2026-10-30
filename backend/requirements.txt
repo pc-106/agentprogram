@@ -1,0 +1,15 @@
+# ===== 新后端（Vue + FastAPI 版）必备依赖 =====
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+pyyaml>=6.0
+pypdf>=4.0
+
+# 中文分词（可选但推荐）：装了走词级检索；不装自动退化为二元组
+jieba>=0.42
+
+# ===== 真实 Agent 模式（可选）=====
+# 仅在配置了 DASHSCOPE_API_KEY、需要调用通义千问时安装：
+#   pip install -r requirements-real.txt
+# 其中包含 langchain / langgraph / langchain-community / langchain-chroma /
+# dashscope / chromadb 等原有 ragagent 工程所需依赖。
